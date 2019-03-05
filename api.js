@@ -12,10 +12,10 @@ app.use(cors());
 
 //Database Config .env
 const config = {
-   user: 'vkamxiku',
-  host: 'baasu.db.elephantsql.com',
-  database: 'vkamxiku',
-  password: 'Nihwj0iyScZ7nJkCK6e_0HTNxaHbL7n6',
+   user: 'gghfwwtq',
+  host: 'isilo.db.elephantsql.com',
+  database: 'gghfwwtq',
+  password: 'kHbI0L69aRVh6vYz6H0bfF76g1ozx_wv',
   port: '5432'
 };
 
@@ -27,7 +27,7 @@ app.get("/api.json", (req, res, next) => {
     if (err) {
       console.log("Can not connect to the DB because of " + err);
     }
-    client.query("SELECT * FROM users", function(err, result) {
+    client.query("SELECT * FROM public.\"USER_GROUPS\"", function(err, result) {
       done();
       if (err) {
         console.log(err);
