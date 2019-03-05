@@ -21,9 +21,9 @@
  ### Start your API
 - `$node api.js` 
 
-- API local endpoint: http://localhost:8080/api.json
+- API local endpoint: http://localhost:5000/api.json
 
  ### Start your Application
 - `$npm start` 
 
-- App starts on: http://localhost:3000/
+- App starts on: http://localhost:5000/
